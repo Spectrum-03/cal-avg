@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<int>arr(5);
+    for(int i=0;i<5;i++)
+    {
+       cout << "Enter a number: "; 
+       cin >> arr[i];
+    }
+    int sum= accumulate(arr.begin(),arr.end(),0);
+    cout << (sum)/5.0 << endl;
+}
